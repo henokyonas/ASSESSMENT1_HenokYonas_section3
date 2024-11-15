@@ -1,0 +1,142 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    color: black;
+    background-color: #3498db;
+    font-weight: bold ;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 106px;
+    border-radius: 20px;
+
+}
+
+/* Navigation */
+nav {
+    margin: 2rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Section styles */
+.section {
+    margin: 4rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Product list styles */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.product-list > div {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.product-list > div:hover {
+    transform: translateY(-5px);
+}
+
+/* Product image styles */
+.product-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Product title styles */
+.product-list h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #2c3e50;
+}
+
+/* Product description styles */
+.product-list p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Price styles */
+.product-list p:last-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #27ae60;
+    text-align: right;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
